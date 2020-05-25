@@ -1,0 +1,17 @@
+{% extends 'posts/base.html' %}
+
+{% block title %}Home Page {% endblock title %}
+
+{% block content %}
+
+<div class="home-page">
+  <h4>Message board homepage</h4>
+  <ul>
+    <!--  for object in all_posts_list  --!>
+    {% for object in object_list %}
+      <li>{{object}}</li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock content %}
