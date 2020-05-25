@@ -1,1 +1,1 @@
-web: gunicorn message_board_app --log-file -
+web: gunicorn message_board_app.wsgi --log-file -
